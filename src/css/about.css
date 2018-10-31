@@ -1,0 +1,200 @@
+/*== eduaction part css start ==*/
+
+.education_part {
+    padding: 20px 0 60px;
+    background: white;
+}
+
+.edu_text,
+.edu_text_one,
+.edu_text_two {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 27px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    position: relative;
+    background: white;
+}
+
+.edu_text_one:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: -25%;
+    background: white;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+}
+
+.edu_text_two:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -26%;
+    background: white;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #555;
+    border-radius: 50%;
+    -webkit-transform: translate(-37%, -50%);
+    transform: translate(-37%, -50%);
+}
+
+.edu_text_one:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: -10px;
+    background: white;
+    height: 20px;
+    width: 20px;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    -webkit-transform: translateY(-50%)rotate(45deg);
+    transform: translateY(-50%)rotate(45deg);
+}
+
+.edu_text_two:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -10px;
+    background: white;
+    height: 20px;
+    width: 20px;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    -webkit-transform: translateY(-50%)rotate(45deg);
+    transform: translateY(-50%)rotate(45deg);
+}
+
+.edu_text h3,
+.edu_text_one h3,
+.edu_text_two h3 {
+    color: #272869;
+    font-size: 25px;
+    padding-bottom: 6px;
+}
+
+.edu_text h4,
+.edu_text_one h4,
+.edu_text_two h4 {
+    color: #b0b0b0;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 6px;
+    text-transform: capitalize;
+}
+
+.edu_text p,
+.edu_text_one p,
+.edu_text_two p {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.edu-sub-title {
+    font-size:13px!important;
+    text-transform: uppercase;
+    font-weight: 600!important;
+    color: var(--primary-hover-color);
+}
+
+.edu_slider {
+    position: relative;
+    margin: 40px 0;
+    padding: 40px 0;
+}
+
+.edu_slider:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    /*background: url(../img/border.png);*/
+    background: url(../img/border_vertical_line.png);
+    height: 100%;
+    width: 12px;
+    background-repeat: repeat-y;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.edu_slider.horizontal:before {
+    background: url(../img/border_horizon.png);
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    background-repeat: repeat-x;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+.slick-center .edu_text_one:before,
+.slick-center .edu_text_two:before {
+    background: var(--primary-hover-color);
+    border-color: transparent;
+}
+
+.slick-center .edu_text_one,
+.slick-center .edu_text_two {
+    /*-webkit-filter: drop-shadow(0px 0px 10px #222);
+    filter: drop-shadow(0px 0px 10px #222);*/
+}
+
+.slick-vertical .slick-slide {
+    margin-top: 5px;
+
+    min-height: 350px;
+    max-height: 350px;
+}
+
+.arrow_up {
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.arrow_dwn {
+    position: absolute;
+    left: 50%;
+    top: -35px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.arrow_up,
+.arrow_dwn {
+    height: 35px;
+    width: 35px;
+    border: 1px solid #b0b0b0;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.arrow_up:hover,
+.arrow_dwn:hover {
+    background: #272869;
+    color: #fff;
+    border-color: #272869;
+}
+
+/*== eduaction part css end ==*/

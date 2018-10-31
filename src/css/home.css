@@ -1,0 +1,133 @@
+/*== service_part css start ==*/
+
+.service_part {
+    padding: 60px 0;
+    background: white;
+}
+
+.services_item,
+.services_item_two {
+    padding: 130px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border: 2px solid #b0b0b0;
+    border: 2px solid rgba(176, 176, 176, .35);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    background: var(--service-icon-normal-background-color);
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 12px rgba(0, 0, 0, .1);
+}
+
+.services_item:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    height: 2px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.services_item:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    height: 2px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.services_item:hover:before {
+    border-color: var(--service-box-hover-border-color);
+    height: 100%;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: .2s transform linear, .2s height linear .2s;
+    transition: .2s transform linear, .2s height linear .2s;
+}
+
+.services_item .icon,
+.services_item_two .icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.services_item_two:hover {
+    border: 1px solid #ddd;
+}
+
+.services_item:hover .icon i,
+.services_item_two:hover .icon i {
+    color: var(--service-icon-hover-color);
+    background: var(--service-icon-hover-background-color);
+    transform: scale(1.1);
+}
+
+.services_item:hover:after {
+    border-color: var(--service-box-hover-border-color);
+    height: 100%;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: .2s transform linear, .2s height linear .2s;
+    transition: .2s transform linear, .2s height linear .2s;
+}
+
+.services_item .icon i,
+.services_item_two .icon i {
+    height: 70px;
+    width: 70px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    color: var(--primary-hover-color);
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+    margin-bottom: 10px;
+    -webkit-transition: .9s;
+    transition: .9s;
+
+}
+
+.services_item h2,
+.services_item_two h2 {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 15px 0;
+}
+
+.services_item p,
+.services_item_two p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 17px;
+}
+
+.br {
+    padding: 10px 10px;
+}
+
+/*== service_part css end ==*/
+
+
+

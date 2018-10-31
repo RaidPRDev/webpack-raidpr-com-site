@@ -1,0 +1,43 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.3",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "json-loader": "^0.5.7",
+    "mini-css-extract-plugin": "^0.4.4",
+    "modernizr": "^3.6.0",
+    "modernizr-loader": "^1.0.1",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "imagesloaded": "^4.1.4",
+    "isotope-layout": "^3.0.6",
+    "isotope-packery": "^2.0.1",
+    "jquery": "^3.3.1",
+    "jquery-bridget": "^2.0.1",
+    "lodash": "^4.17.11",
+    "owl.carousel": "^2.3.4",
+    "particles": "^0.3.1",
+    "popper.js": "^1.14.4",
+    "typed.js": "^2.0.9"
+  }
+}
