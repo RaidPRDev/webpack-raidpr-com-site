@@ -1,4 +1,4 @@
-# raidpr-com-site
+# raidpr.com personal site
 website built using webpack
 
 ## Prerequisites
